@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;/*flex class:column arrangement position*/
+    align-items: center;/*flex class:row arrangement position*/
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    background-image:url(./bg.jpg);
+    background-attachment: fixed;/*background donot roll with page*/
+	background-position: center;
+	background-repeat: no-repeat;/*repeat background pages*/
+	background-size: cover;/*contain*/
+}
+
+.card {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    font-size: 120%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-size: 120%;
+    width: 100%;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2em;
+    width: 2.0em;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;/*when you point the button then it will change pointer gesture*/
+}
