@@ -1,5 +1,8 @@
 let weather ={
     "apiKey":"b01f116f6bb757cca7ff8ec9d20f2f6b",
+    search: function(){
+        this.fetchWeather(document.querySelector(".search-bar").value)
+    },
     fetchWeather: function(city){
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid="+ this.apiKey)
         .then((response)=>response.json())
@@ -18,5 +21,12 @@ let weather ={
         document.querySelector(".humidity").innerText="Humidity: "+humidity+"%";
         document.querySelector(".wind").innerText="Wind Speed: "+speed+" km/h";
     },
-
 };
+
+document
+.querySelector(".search button")//need to plus "defer" after html.script
+.addEventListener("click",function(){
+weather.search();
+});
+
+weather.fetchWeather("taipei");
