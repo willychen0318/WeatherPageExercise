@@ -53,4 +53,20 @@ button {
     cursor: pointer;/*when you point the button and it will change pointer gesture*/
 }
 
-h2.temp {margin: 0;}
+h2.temp {
+    margin: 0;
+}
+
+.iconbox {
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+}
+
+.description{
+    text-transform: capitalize;/*nice font feature*/
+    margin-left: 10px;
+}
+
+
+
